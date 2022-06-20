@@ -158,7 +158,8 @@ h1 {
   }
 
   .between,
-  .again {
+  .again,
+  h1 {
     position: relative;
     top: 0;
     left: 0;
@@ -168,5 +169,14 @@ h1 {
   h1 {
     top: 60%;
     font-size: 3.6rem;
+    transform: translate(0%, 0%);
   }
+
+  header {
+    height: 46vh;
+  }
+
+  /* .again {
+    order: -1;
+  } */
 }
