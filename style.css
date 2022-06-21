@@ -15,7 +15,6 @@ body {
   font-family: "Press Start 2P", sans-serif;
   color: #eee;
   background-color: #222;
-  overflow: hidden;
   /* background-color: #60b347; */
 }
 
@@ -23,7 +22,11 @@ body {
 header {
   position: relative;
   height: 35vh;
-  /* border-bottom: 7px solid #eee; */
+}
+
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
 }
 
 main {
@@ -64,9 +67,6 @@ h1 {
   width: 15rem;
   padding: 3rem 0rem;
   text-align: center;
-  /* position: absolute; */
-  /* bottom: 0; */
-  /* left: 50%; */
   transform: translate(-50%, 50%);
 }
 
@@ -75,6 +75,7 @@ h1 {
   top: 50%;
   left: 50%;
 }
+
 .number-inner {
   display: block;
   width: 100vw;
@@ -136,7 +137,7 @@ h1 {
 
 /* MEDIA QUERIES */
 
-/* BELOW 700px */
+/* BELOW 700px (Tablets) */
 @media (max-width: 45em) {
   html {
     font-size: 50%;
@@ -162,7 +163,7 @@ h1 {
   }
 }
 
-/* BELOW 512px */
+/* BELOW 512px (Phones)*/
 @media (max-width: 32em) {
   .header-flex {
     padding: 3.2rem;
@@ -174,7 +175,7 @@ h1 {
   }
 
   .number-inner {
-    top: 43%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, 50%);
   }
@@ -184,6 +185,7 @@ h1 {
     top: 0;
     left: 0;
   }
+
   .between,
   .again,
   h1 {
